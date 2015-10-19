@@ -67,7 +67,6 @@ mse.localRegression2 <- mean((preds.localRegression2$fit - testingNew$wage)^2)
 localRegression2.se.bands <- cbind(preds.localRegression2$fit + 2 * preds.localRegression2$se.fit, 
                          preds.localRegression2$fit - 2 * preds.localRegression2$se.fit)
 max.wage.localRegression2 <- max(preds.localRegression2$fit)
-#max.wage.localRegression2 <- preds.localRegression2$fit[which(preds.localRegression2$fit==max(preds.localRegression2$fit))][[1]]
 
 
 shinyServer(
